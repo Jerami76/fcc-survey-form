@@ -1,0 +1,112 @@
+:root {
+  font-family: "Lato", Arial, sans-serif;
+  color: black;
+  width: 100%;
+}
+
+.layout {
+  display: grid;
+  /*NOT SURE IF I SHOULD KEEP HEIGHT. DOUBLE CHECK BEFORE FINALIZING!!*/
+  height: auto;
+  grid-template-rows: 9.375em 9fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "head head head" " desc form desc2" "foot foot foot";
+  background-color: ;
+}
+
+/* Grid info*/
+/* Grid Names */
+header {
+  grid-area: head;
+  background-color: orange;
+  padding: 0.5em;
+  margin-bottom: 0.22em;
+}
+
+h1 {
+  text-align: center;
+  background-image: linear-gradient(to top, gray, lightgray);
+  padding: 0.9em;
+}
+form {
+  grid-area: form;
+  background-color: ;
+  border: 1px solid lightgray;
+  padding: 1em;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="text"] {
+  background-color: #fee789;
+}
+h1 i {
+  position: relative;
+  top: 0.19em;
+}
+.justify{
+  text-align: justify;
+  
+}
+.bump {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.text-shadow {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.button {
+  border: 1px black solid;
+  border-radius: 3px;
+  background-image: linear-gradient(
+    to top,
+    hsl(43, 85%, 62%),
+    hsl(43, 84%, 85%)
+  );
+}
+
+.button:hover {
+  background-image: linear-gradient(
+    to top,
+    hsl(43, 85%, 47%),
+    hsl(43, 84%, 70%)
+  );
+}
+
+#description-box {
+  grid-area: desc;
+  background-color: ;
+  padding: 1.25em;
+}
+
+#description-box-2 {
+  grid-area: desc2;
+  background-color: ;
+  padding: 1.25em;
+}
+footer {
+  grid-area: foot;
+  background-color: ;
+}
+#title {
+  background-color: ;
+}
+#copyright {
+  display: grid;
+  justify-content: flex-end;
+}
+
+
+/*For Small Screens(mobile) */
+@media screen and (max-width: 650px) {
+  .SmallScreen {
+    display: block;
+    font-size: 1.15em;
+    width: 100%;
+  }
+}

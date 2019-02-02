@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!-- Test Code below- Remove lines 3 and 5 to test**
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Working_Complete_Survey_form.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Survey Form Challenge</title>
+
+</head>
+
+<body>
+
+  <div id="main" class="layout SmallScreen">
+    <header>
+      <div id="title-bar">
+        <h1 id="title" style="font-weight:strong"><b>Sign up for</b> <b class="text-shadow" style="color:orange">M</b><b style="margin-right:-.1em">Turk M</b><i class="fa fa-amazon bump" style=" font-size:.8em "></i><b style="margin-left:-.1em">sters Qualification</b></h1>
+        <hr>
+      </div>
+    </header>
+
+    <div id="description-box">
+      <h2>What is Mturk Masters?</h2>
+      <p id="description" class="justify">The Amazon Mechanical Turk (MTurk) Masters Program is designed to give Requesters access to a specialized group of Workers who consistently demonstrate accuracy in performing a wide range of HITs.</p>
+      <p class="justify">Masters Workers are selected based on a number of attributes including total assignments submitted, total earnings, tenure, and diversity of work type. If you’re an aspiring Master who’s been focused on a single work type, give a transcription task
+        a shot or spend some time taking a survey.</p>
+    </div>
+    <!-- Form Code Goes Here -->
+    <form action="#" id="survey-form">
+
+      <label for="name" id="name-label">Name</label>
+      <span class=""><input type="text" id="name" placeholder="Full Name" required></span><br>
+
+      <br>
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id=email placeholder="abc@xyz.com" required><br>
+
+      <br><label for="number" id="number-label">% of income you'd like to donate to Bezos</label><br>
+      <input type="number" id="number" placeholder="50-100" min="50" max="99"><br>
+      <br>
+      <label for="dropdown" id="drop-label">Are you willing to give Bezos your kidney?</label><br>
+      <select id="dropdown">
+    <option value="yes">Yes</option>
+    <option value="yes">Left or right?</option>
+    <option value="maybe">How much does this HIT pay?</option>
+        <option value="yes">Just the kidney? How about a soul?</option>
+    <!-- <option value="optionX">optionX</option> **More Options go here**-->   
+      </select><br>
+      <br>
+      <label for="radio" id="radio-label">Gender</label><br>
+      <input type="radio" name="radio1" value="male" checked>Male
+      <input type="radio" name="radio1" value="female">Female
+      <input type="radio" name="radio1" value="gender-3">X<br>
+      <input type="radio" name="radio1" value="gender-4">Whichever will get me Masters.<br>
+
+      <br><label for="checkbox" id="chkbox-label">Is English your Native Language?</label><br>
+      <input type="checkbox" name="checkbox1" value="yes" checked>Yes
+      <input type="checkbox" name="checkbox1" value="no">Si'
+      <!-- Extra Checkbox ** <input type="checkbox" name="checkbox1" value="ch-value3">box3 -->
+      <br>
+
+      <br><textarea id="textarea" name="textarea" cols="30" rows="4" placeholder="Keep your comments to yourself..."></textarea><br>
+
+      <span id="button-span"><input type="submit" id="submit" value="Submit!!" class="button"></span>
+
+    </form>
+    <div id="description-box-2">
+      <h2>How do I receive the Masters Qualification?</h2>
+      <p id="description-2" class="justify">Mechanical Turk automatically grants the Masters Qualification based on statistical models that analyze Worker performance based on several Requester-provided and marketplace data points. Those who score the highest across these key data points
+        are granted the Masters Qualification. Workers cannot apply for this status. To receive the Masters Qualification, try tasks across a variety of Requesters and consistently submit a lot of high quality work.</p>
+      <h2>Can the Masters Qualification be revoked?</h2>
+      <p class="justify">Yes, the Masters Qualification can be revoked if the Worker's performance declines and he or she no longer scores highest across Requester-provided and marketplace data points, or the Worker otherwise violates our Participation Agreement. If Workers
+        have the Masters Qualification revoked, they will have an opportunity to improve and will be eligible to regain the Masters Qualification in the future.</p>
+    </div>
+  </div>
+</body>
+
+<footer>
+  <div id="copyright">
+    <p style="text-align: right; font-size:.7em; margin-bottom:-5px ">&copy 2019 Created by Jerami for Educational Purposes only.</p>
+  </div>
+</footer>
+
+</html>
